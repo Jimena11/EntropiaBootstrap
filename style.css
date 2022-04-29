@@ -1,0 +1,22 @@
+.empresa {
+  width: 30%;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+}
+
+.empresatitulo {
+  height: 20;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  position: absolute;
+}
+
+.logo_empresa {
+  padding: 0.5rem;
+  width: 25%;
+  height: 20%;
+  display: inline;
+  size: 20;
+}
