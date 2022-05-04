@@ -23,6 +23,8 @@
       crossorigin="anonymous"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -70,26 +72,28 @@
       </symbol>
     </svg>
 
-
     <div class="container">
-
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
       >
         <a
           href="index.html"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
         >
-        
-          <img src="imagenes/logoentropia2.jpg" alt="Logo de entropía" height="75"/>
-        
-            <use xlink:href="#bootstrap" />
-          </svg>
+          <img
+            src="imagenes/logoentropia2.jpg"
+            alt="Logo de entropía"
+            height="75"
+          />
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="nosotros.html" class="nav-link px-2 link-dark">Nosotros</a></li>
+          <li>
+            <a href="index.html" class="nav-link px-2 link-dark">Home</a>
+          </li>
+          <li>
+            <a href="nosotros.html" class="nav-link px-2 link-dark">Nosotros</a>
+          </li>
           <li><a href="#" class="nav-link px-2 link-dark">Aplicación</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">Contacto</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
@@ -108,7 +112,7 @@
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/manos.jpg" alt="">
+            <div class="hero-image hero-image-home"></div>
 
             <div class="container">
               <div class="carousel-caption text-start">
@@ -128,21 +132,8 @@
 
       <div class="container marketing">
         <div class="row">
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+          <div class="col-lg-4 caracteristica">
+            <img src="imagenes/amigable.png" alt="amigable" height="100" />
 
             <h2>Caracteristica 1</h2>
             <p>
@@ -154,21 +145,8 @@
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+          <div class="col-lg-4 caracteristica">
+            <img src="imagenes/simple.png" alt="simple" height="100" />
 
             <h2>Caracteristica 2</h2>
             <p>
@@ -179,21 +157,8 @@
               <a class="btn btn-secondary" href="#">View details &raquo;</a>
             </p>
           </div>
-          <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 140x140"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
+          <div class="col-lg-4 caracteristica">
+            <img src="imagenes/volunteer.png" alt="volunteer" height="100" />
 
             <h2>Caracteristica 3</h2>
             <p>
@@ -208,53 +173,42 @@
         <hr class="featurette-divider" />
 
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
+          <div class="col-md-7 order-md-2 d-flex align-items-center">
             <p class="lead">
-              SEGUNDA SECCIÓN 1/2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus recusandae velit rem nihil iure similique. Pariatur, incidunt facilis, deleniti minus a quibusdam deserunt velit officiis veritatis, ab neque minima. 
+              SEGUNDA SECCIÓN 1/2 Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Excepturi voluptatibus recusandae velit rem
+              nihil iure similique. Pariatur, incidunt facilis, deleniti minus a
+              quibusdam deserunt velit officiis veritatis, ab neque minima.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img
+              src="imagenes/residuos.jpg"
+              alt="Recolección de residuos"
+              class="img-fluid"
+              data-aos="zoom-in-down"
+            />
           </div>
         </div>
 
         <hr class="featurette-divider" />
 
         <div class="row featurette">
-          <div class="col-md-7">
-            
+          <div class="col-md-7 d-flex align-items-center">
             <p class="lead">
-              SEGUNDA SECCIÓN 2/2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus recusandae velit rem nihil iure similique. Pariatur, incidunt facilis, deleniti minus a quibusdam deserunt velit officiis veritatis, ab neque minima. 
+              SEGUNDA SECCIÓN 2/2 Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Excepturi voluptatibus recusandae velit rem
+              nihil iure similique. Pariatur, incidunt facilis, deleniti minus a
+              quibusdam deserunt velit officiis veritatis, ab neque minima.
             </p>
           </div>
           <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img
+              src="imagenes/cartel.jpg"
+              alt="Recolección de residuos"
+              class="img-fluid"
+              data-aos="zoom-in-down"
+            />
           </div>
         </div>
 
@@ -265,75 +219,82 @@
       <!-- /.container -->
 
       <div class="container">
-        <h2 class="encabezado1">Compañías que confían en Nosotros</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam est
-          optio a animi, omnis amet.
-        </p>
-        <div class="empresa">
-          <h5 class="empresatitulo">Coca Cola</h5>
-          <img
-            src="imagenes/cocacola.png"
-            alt="Logo de Coca Cola"
-            class="logo_empresa"
-            data-aos="flip-right"
-          />
+        <div class="d-flex flex-column align-items-center">
+          <h2 class="encabezado1">Compañías que confían en Nosotros</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam est
+            optio a animi, omnis amet.
+          </p>
         </div>
-        <div class="empresa">
-          <h5 class="empresatitulo">Mostaza</h5>
-          <img
-            src="imagenes/mostaza.png"
-            alt="Logo de Mostaza"
-            class="logo_empresa"
-            data-aos="flip-right"
-          />
-        </div>
-        <div class="empresa">
-          <h5 class="empresatitulo">Starbucks</h5>
-          <img
-            src="imagenes/starbucks.jpg"
-            alt="Logo de Starbucks Cofee"
-            class="logo_empresa"
-            data-aos="flip-right"
-          />
-        </div>
-        <div class="empresa">
-          <h5 class="empresatitulo">Mercedes Benz</h5>
-          <img
-            src="imagenes/mercedesbenz.jpg"
-            alt="Logo de Mercedez Benz"
-            class="logo_empresa"
-            data-aos="flip-right"
-          />
-        </div>
-        <div class="empresa">
-          <h5 class="empresatitulo">Nike</h5>
-          <div class="empresaimagen">
-            <img
-              src="imagenes/nike.jpg"
-              alt="Logo de Nike"
-              class="logo_empresa"
-              data-aos="flip-right"
-            />
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/cocacola.png"
+                alt="Logo de Coca Cola"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>Coca Cola</h5>
+            </div>
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/starbucks.jpg"
+                alt="Logo de Starbucks Cofee"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>Starbucks</h5>
+            </div>
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/ypf.png"
+                alt="Logo de YPF"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>YPF</h5>
+            </div>
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/mostaza.png"
+                alt="Logo de Mostaza"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>Mostaza</h5>
+            </div>
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/mercedesbenz.jpg"
+                alt="Logo de Mercedez Benz"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>Merces Benz</h5>
+            </div>
+            <div class="col-6 col-md-2 contenedor-empresa">
+              <img
+                src="imagenes/nike.jpg"
+                alt="Logo de Nike"
+                data-aos="flip-right"
+                height="50"
+              />
+              <h5>Nike</h5>
+            </div>
           </div>
         </div>
-        <div class="empresa">
-          <h5 class="empresatitulo">YPF</h5>
-          <img src="imagenes/ypf.png" alt="Logo de YPF" class="logo_empresa" data-aos="flip-right"/>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Contactanos</button>
+          <a href="contacto.html"></a>
         </div>
       </div>
 
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Contactanos</button> <a href="contacto.html"></a>
-        
-      </div>
-      
       <!-- FOOTER -->
-      <div class="container">
+      <div class="container gradiente_pie">
         <footer
           class="d-flex flex-wrap justify-content-between align-items-end py-3 my-4 border-top flex-column"
         >
-          
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
               <a class="text-muted" href="#"
@@ -361,12 +322,16 @@
           </div>
         </footer>
       </div>
-          </main>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

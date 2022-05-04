@@ -20,3 +20,63 @@
   display: inline;
   size: 20;
 }
+
+.contenedor-empresa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-position-y: top;
+}
+
+.hero-image-home {
+  background-image: url(imagenes/manos.jpg);
+}
+
+.hero-image-nosotros {
+  background-image: url(imagenes/plantararboles.jpg);
+}
+
+/*TRANSFORMACIONES*/
+
+.caracteristica:hover {
+  transform: scale(1.2);
+  background-color: rgba(177, 255, 243, 0.781);
+}
+
+.gradiente_pie {
+  background-image: linear-gradient(
+    to left,
+    rgb(72, 228, 226),
+    rgb(196, 247, 249)
+  );
+}
+
+.encabezado1 {
+  font-size: 40px;
+  color: rgb(19, 115, 118);
+}
+
+.encabezado2 {
+  font-size: 20px;
+  color: rgb(28, 145, 149);
+}
+
+.subtitulo1 {
+  font-size: 20px;
+  color: rgb(78, 84, 84);
+}
+
+.subtitulo2 {
+  font-size: 10px;
+  color: rgb(24, 122, 122);
+}

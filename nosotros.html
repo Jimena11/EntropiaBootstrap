@@ -23,6 +23,8 @@
       crossorigin="anonymous"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -71,26 +73,28 @@
       </symbol>
     </svg>
 
-
     <div class="container">
-
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
       >
         <a
           href="index.html"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
         >
-        
-          <img src="imagenes/logoentropia2.jpg" alt="Logo de entropía" height="75"/>
-        
-            <use xlink:href="#bootstrap" />
-          </svg>
+          <img
+            src="imagenes/logoentropia2.jpg"
+            alt="Logo de entropía"
+            height="75"
+          />
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="nosotros.html" class="nav-link px-2 link-dark">Nosotros</a></li>
+          <li>
+            <a href="index.html" class="nav-link px-2 link-dark">Home</a>
+          </li>
+          <li>
+            <a href="nosotros.html" class="nav-link px-2 link-dark">Nosotros</a>
+          </li>
           <li><a href="#" class="nav-link px-2 link-dark">Aplicación</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">Contacto</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
@@ -109,71 +113,53 @@
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/plantararboles.jpg" alt="">
-
+            <div class="hero-image hero-image-nosotros"></div>
           </div>
         </div>
       </div>
 
-      <div>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, rem?</h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellat fugiat tempore doloremque voluptas quos maxime quibusdam, molestias possimus esse ullam dolor nisi sapiente temporibus impedit, necessitatibus, cupiditate deleniti iste. Ad iusto culpa molestias voluptates recusandae provident ut, sit iste fugit, eius repellendus tenetur illum! Officia asperiores eveniet qui enim.</h4>
+      <div class="container">
+        <h2 class="encabezado1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, rem?
+        </h2>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+          repellat fugiat tempore doloremque voluptas quos maxime quibusdam,
+          molestias possimus esse ullam dolor nisi sapiente temporibus impedit,
+          necessitatibus, cupiditate deleniti iste. Ad iusto culpa molestias
+          voluptates recusandae provident ut, sit iste fugit, eius repellendus
+          tenetur illum! Officia asperiores eveniet qui enim.
+        </h4>
       </div>
       <div class="container marketing mt-5">
-
-
-        
-
         <div class="row featurette">
-          <div class="col-md-7">
-            
-            <p class="lead">
-              
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nam?
+          <div class="col-md-6 d-flex align-items-center">
+            <p class="lead subtitulo1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, nam?
             </p>
           </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+          <div class="col-md-6">
+            <img
+              src="imagenes/manos.jpg"
+              alt="Manos juntas"
+              class="img-fluid"
+            />
           </div>
         </div>
-        
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nam?
+
+        <div class="row featurette mt-5 mb-5">
+          <div class="col-md-6 order-md-2 d-flex align-items-center">
+            <p class="lead subtitulo1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, nam?
             </p>
           </div>
-          <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+          <div class="col-md-6 order-md-1">
+            <img src="imagenes/ods.png" alt="ODS" class="img-fluid" />
           </div>
         </div>
-        
+
         <article class="m-3 d-flex justify-content-center">
           <iframe
             width="560"
@@ -186,41 +172,67 @@
           ></iframe>
         </article>
       </div>
-      
-      <div class="container">
+
+      <!-- CONOCE AL TEAM -->
+
+      <div class="container mt-5 d-flex justify-content-center">
         <h2>Conoce al equipo</h2>
-        <div class="d-flex justify-content-center">
-          <div class="p-2 d-flex justify-content-center flex-column align-items-center"><img src="imagenes/jeff.png" alt="Jeff" height="100">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 contenedor-empresa">
+            <img
+              src="imagenes/jeff.png"
+              alt="Jeff"
+              data-aos="flip-right"
+              height="100"
+            />
             <h5>Jeff Bezos</h5>
           </div>
-          <div class="p-2 d-flex justify-content-center flex-column align-items-center"><img src="imagenes/elon.png" alt="Jeff" height="100">
-            <h5>Elon Musk</h5>
-          </div>
-          <div class="p-2 d-flex justify-content-center flex-column align-items-center"><img src="imagenes/bill.png" alt="Jeff" height="100">
+          <div class="col-6 col-md-3 contenedor-empresa">
+            <img
+              src="imagenes/bill.png"
+              alt="Jeff"
+              data-aos="flip-right"
+              height="100"
+            />
             <h5>Bill Gates</h5>
           </div>
-          <div class="p-2 d-flex justify-content-center flex-column align-items-center"><img src="imagenes/mark.png.crdownload" alt="Jeff" height="100">
+          <div class="col-6 col-md-3 contenedor-empresa">
+            <img
+              src="imagenes/mark.png.crdownload"
+              alt="Mark"
+              data-aos="flip-right"
+              height="100"
+            />
             <h5>Mark Z</h5>
           </div>
+          <div class="col-6 col-md-3 contenedor-empresa">
+            <img
+              src="imagenes/elon.png"
+              alt="Elon Musk"
+              data-aos="flip-right"
+              height="100"
+            />
+            <h5>Elon Musk</h5>
           </div>
-
-          <div>
-            <h3>¿Queres sumarte a nuestro equipo?</h2>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aut ab provident unde, sunt necessitatibus.</h3>
-          </div>
+        </div>
       </div>
 
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Contactanos</button> <a href="contacto.html"></a>
-        
+      <div class="container mt-4 d-flex flex-column align-items-center">
+        <h3>¿Queres sumarte a nuestro equipo?</h3>
+        <h5>Escribinos a contacto@entropia.com</h5>
       </div>
-      
+      <div class="d-grid gap-2 mt-5 container">
+        <button class="btn btn-primary" type="button">Contactanos</button>
+        <a href="contacto.html"></a>
+      </div>
       <!-- FOOTER -->
-      <div class="container">
+      <div class="container gradiente_pie">
         <footer
           class="d-flex flex-wrap justify-content-between align-items-end py-3 my-4 border-top flex-column"
         >
-          
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
               <a class="text-muted" href="#"
@@ -248,12 +260,16 @@
           </div>
         </footer>
       </div>
-          </main>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
