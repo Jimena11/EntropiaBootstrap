@@ -51,7 +51,7 @@
   background-position-y: top; }
 
 .hero-image-home {
-  background-image: url(imagenes/manos.jpg); }
+  background-image: url(/EntropiaBootstrap/imagenes/manos.jpg); }
 
 /*TRANSFORMACIONES*/
 .caracteristica:hover {
