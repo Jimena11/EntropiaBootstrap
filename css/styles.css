@@ -1,0 +1,71 @@
+.hero-image-home {
+  background-image: url(imagenes/manos.jpg); }
+
+.encabezado1 {
+  font-size: 40px;
+  color: #1c9195; }
+
+.encabezado2 {
+  font-size: 20px;
+  color: #137376; }
+
+.subtitulo1 {
+  font-size: 20px;
+  color: #1c9195; }
+
+.subtitulo2 {
+  font-size: 40px;
+  color: #137376; }
+
+/* EMPRESAS */
+.empresa {
+  width: 30%;
+  display: inline-block;
+  align-items: center;
+  align-content: center; }
+
+.empresatitulo {
+  height: 20;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  position: absolute; }
+
+.contenedor-empresa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px; }
+  .contenedor-empresa .logo_empresa {
+    padding: 0.5rem;
+    width: 25%;
+    height: 20%;
+    display: inline;
+    size: 20; }
+
+/*HERO IMAGE*/
+.hero-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-position-y: top; }
+
+.hero-image-home {
+  background-image: url(/imagenes/manos.jpg); }
+
+/*TRANSFORMACIONES*/
+.caracteristica:hover {
+  transform: scale(1.2);
+  background-color: rgba(177, 255, 243, 0.781); }
+
+header a:hover {
+  opacity: 50%; }
+
+.gradiente_pie {
+  background-image: linear-gradient(to left, #48e4e2, #c4f7f9); }
+
+footer li:hover {
+  opacity: 50%; }

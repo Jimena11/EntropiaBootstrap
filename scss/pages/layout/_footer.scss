@@ -1,0 +1,15 @@
+.gradiente_pie {
+  background-image: linear-gradient(
+    to left,
+    $color-gradientepie-oscuro,
+    $color-gradientepie-claro
+  );
+}
+
+footer {
+  li {
+    &:hover {
+      opacity: 50%;
+    }
+  }
+}
