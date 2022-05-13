@@ -1,7 +1,5 @@
 header {
   a {
-    &:hover {
-      opacity: 50%;
-    }
+    @extend .opacity-50;
   }
 }

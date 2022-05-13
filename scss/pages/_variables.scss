@@ -7,3 +7,8 @@ $color-font-gris: rgb(78, 84, 84);
 $color-gradientepie-oscuro: rgb(72, 228, 226);
 $color-gradientepie-claro: rgb(196, 247, 249);
 $color-claro: rgba(177, 255, 243, 0.781);
+.opacity-50 {
+  &:hover {
+    opacity: 50%;
+  }
+}

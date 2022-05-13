@@ -1,21 +1,37 @@
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
 .encabezado1 {
   font-size: $font-size-g;
   color: $color-font-claro;
+  font-weight: map-get($font-weights, "bold");
 }
 
 .encabezado2 {
   font-size: $font-size-m;
   color: $color-font-oscuro;
+  font-weight: map-get($font-weights, "medium");
 }
 
 .subtitulo1 {
   font-size: $font-size-m;
   color: $color-font-claro;
+  font-weight: map-get($font-weights, "medium");
 }
 
 .subtitulo2 {
   font-size: $font-size-g;
   color: $color-font-oscuro;
+  font-weight: map-get($font-weights, "regular");
 }
 
 /* EMPRESAS */
@@ -36,11 +52,9 @@
 }
 
 .contenedor-empresa {
+  @include flex-center;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 10px;
 
   .logo_empresa {

@@ -8,8 +8,11 @@
 
 footer {
   li {
-    &:hover {
-      opacity: 50%;
-    }
+    @extend .opacity-50;
+  }
+  a {
+    @extend .opacity-50;
+    color: $color-font-claro;
+    text-decoration: none;
   }
 }
