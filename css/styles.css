@@ -71,3 +71,10 @@
 footer a {
   color: #1c9195;
   text-decoration: none; }
+
+.hero-image-aplicacion {
+  background-image: url(../imagenes/celularb.jpg);
+  background-position-y: center; }
+
+.hero-image-contacto {
+  background-image: url(../imagenes/manosempresasdarken.jpg); }
