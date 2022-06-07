@@ -3,3 +3,24 @@ header {
     @extend .opacity-50;
   }
 }
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  &:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $color-primary;
+  color: $color-primary;
+  &:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+  }
+}
+
+.highlighted {
+  background-color: rgba(0, 0, 0, 0.3);
+}

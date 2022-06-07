@@ -1,3 +1,12 @@
+.hero-image {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-position-y: top; }
+  .hero-image h1 {
+    background-color: bisque; }
+
 .opacity-50:hover, header a:hover, footer li:hover, footer a:hover {
   opacity: 50%; }
 
@@ -50,20 +59,32 @@
     size: 20; }
 
 /*HERO IMAGE*/
-.hero-image {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-position-y: top; }
-
 .hero-image-home {
-  background-image: url(../imagenes/manos.jpg); }
+  background-image: url(../imagenes/manosvoluntarias.jpg);
+  background-position-y: center;
+  background-size: cover; }
 
 /*TRANSFORMACIONES*/
 .caracteristica:hover {
   transform: scale(1.2);
   background-color: rgba(177, 255, 243, 0.781); }
+
+.btn-primary {
+  background-color: #3bacaa;
+  border-color: #3bacaa; }
+  .btn-primary:hover {
+    background-color: #0a4063;
+    border-color: #0a4063; }
+
+.btn-outline-primary {
+  border-color: #3bacaa;
+  color: #3bacaa; }
+  .btn-outline-primary:hover {
+    background-color: #0a4063;
+    border-color: #0a4063; }
+
+.highlighted {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .gradiente_pie {
   background-image: linear-gradient(to left, #48e4e2, #c4f7f9); }
@@ -73,8 +94,32 @@ footer a {
   text-decoration: none; }
 
 .hero-image-aplicacion {
-  background-image: url(../imagenes/celularb.jpg);
+  background-image: url(../imagenes/celular.jpg);
   background-position-y: center; }
 
 .hero-image-contacto {
   background-image: url(../imagenes/manosempresasdarken.jpg); }
+
+.form-control,
+.form-select {
+  border-color: #72cad8; }
+  .form-control:focus,
+  .form-select:focus {
+    box-shadow: 0 0 0 0.25rem #72cad8; }
+
+.form-check-input:checked {
+  border-color: #72cad8;
+  background-color: #72cad8; }
+
+.hero-image-nosotros {
+  background-image: url(../imagenes/plantararboles.jpg); }
+
+.hero-image-faqs {
+  background-image: url(../imagenes/faqs_volunteer.jpg);
+  background-position-y: top; }
+
+.hero-image-pregunta {
+  background-image: url(../imagenes/faqs.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px; }

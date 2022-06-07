@@ -7,6 +7,20 @@ $color-font-gris: rgb(78, 84, 84);
 $color-gradientepie-oscuro: rgb(72, 228, 226);
 $color-gradientepie-claro: rgb(196, 247, 249);
 $color-claro: rgba(177, 255, 243, 0.781);
+$color-primary: rgb(59, 172, 170);
+$color-primary-hover: rgb(10, 64, 99);
+$color-form: #72cad8;
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-position-y: top;
+  h1 {
+    background-color: bisque;
+  }
+}
 .opacity-50 {
   &:hover {
     opacity: 50%;
